@@ -15,7 +15,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 # Kalshi API endpoint
-KALSHI_API = 'https://trading-api.kalshi.com/trade-api/v2/markets'
+KALSHI_API = 'https://api.elections.kalshi.com/trade-api/v2/markets'
 
 try:
     response = requests.get(KALSHI_API)
